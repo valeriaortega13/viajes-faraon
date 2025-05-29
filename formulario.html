@@ -1,0 +1,160 @@
+<!<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Volaris Faraon</title>
+</head>
+<body>
+	<style>
+		body{
+    background: rgb(170,87,31);
+    background: linear-gradient(90deg, rgba(170,87,31,1) 0%, rgba(236,88,62,1) 100%, rgba(0,212,255,1) 100%);
+    background-position: center;
+   background-repeat: no-repeat;
+   width: 50%;
+   height: 150vh;
+}
+h1{
+    font-family: Verdana;
+    font-weight: 800%;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    transform: translateX(350px);
+   top: -50%;
+    font-size: 180%;
+    color: white;
+    }
+div{
+	font-family: Verdana;
+	font-size: 100%;
+	font-weight: 800%;
+	width: 75%;
+	transform: translateX(20px);
+	color: white;
+
+
+   }
+.paquetes {
+    padding: 10px;
+    text-align: right; 
+    position: relative;
+}
+
+.imagenes {
+    position: absolute; 
+    top:-80px; 
+    transform: translateX(900px);
+    height: auto;
+}
+
+.paquetes div {
+    margin-bottom: 20px; 
+}
+
+.paquetes img {
+    max-width: 100%; 
+    height: 150px;
+    display: block; 
+}
+.imagenes img{
+	border-radius: 10px;
+	transition: transform 0.3s ease;
+}
+.imagenes img:hover{
+	transform: scole(1.5);
+}
+.imagenes{
+	cursor: pointer;
+	margin-bottom: 20px;
+}
+.button {
+    background-color: #fd865d; 
+    color: white; 
+    padding: 10px 20px;
+    text-align: left;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 0; 
+    cursor: pointer;
+    text-decoration: none; 
+    border-radius: 5px;
+}
+	</style>
+	<h1 align="center">Formulario de registro.</h1>
+	<div class="cuerpo">
+		<form action="mailto:dairapalomares3@gmail.com" method="POST">
+			<br>
+  
+   <div>
+			<p>
+				<label for="nombrec" >Nombre Completo:</label>
+				<input type="text" name="nombrec" maxlength="128" placeholder="Teclea tu nombre completo.">
+			</p>
+			<br>
+
+			<p>
+				<label for="direccion" >Número de telefono:</label>
+				<input type="text" name="telefono" maxlength="32" placeholder="Teclea tu número de telefono.">
+			</p>
+			<br>
+			<p>
+				<label for="sexo" >Sexo:</label>
+				<input type="text" name="sexo" maxlength="32" placeholder="Teclea tu Sexo.">
+			</p>
+			<br>
+			<p>
+				<label for="curp" >Curp:</label>
+				<input type="text" name="curp" maxlength="32" placeholder="Teclea tu Curp.">
+			</p>
+			<br>
+
+			<p>
+				<label for="tipo" align="center"> Tipo de Paquete:</label><br>
+				<input type="radio" name="tipo" value="piramide" checked>Pirámide.<br>
+				<input type="radio" name="tipo" value="barrancal">Barrancal<br>
+				<input type="radio" name="tipo" value="pueblo" checked>Pueblo.<br>
+			</p>
+			<br>
+			<br>
+				<form action="#" method="post">
+    <label for="fecha">Selecciona una fecha:</label>
+    <input type="date" id="fecha" name="fecha" required>
+    <br><br>
+
+
+			<p>
+				<input type="checkbox" name="terminos" value="terminos" >
+				<label for="terminos">Acepto los terminos y condiciones. </label>
+			</p>
+			<br>
+
+			<p>
+				<input type="submit" name="enviar" value="Enviar" >
+				<input type="reset" name="limpiarform" value="Borrar Datos de Formulario." >
+			    <a href="indexx.html" class="button">Regresar</a>
+			</p>
+</form>
+			<td class="paquetes">
+    <div class="imagenes">
+        <div class="piramide">
+            <p>PIRAMIDAL.</p>
+            <a href="piramidee.html"><img src="../practica3/img/piramide.jpg" alt="Piramidal" style="width: 250px; height: auto;"></a>
+        </div>
+        <div class="barrancal">
+            <p>BARRANCAL.</p>
+            <a href="barrancal.html"><img src="../practica3/img/barrancal.jpg" alt="Barrancal" style="width: 250px; height: auto, ;"></a>
+        </div>
+        <div class="pueblo">
+            <p>PUEBLERINO.</p>
+            <a href="Pueblerino.html"><img src="../practica3/img/pueblo.jpg" alt="Pueblerino"  style="width: 250px; height: auto, ;"></a>
+        </div>
+    </td>
+</div>
+	</div>
+
+
+
+</body>
+</html>
